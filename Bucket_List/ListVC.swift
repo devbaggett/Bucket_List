@@ -97,7 +97,7 @@ extension ListVC: ItemVCDelegate {
         
         // if we have indexPath
         if let ip = indexPath {
-            // instead of reload tableView data; reload single row, not entire tableView
+            // instead of reload tableView data, reload single row, not entire tableView
             tableView.reloadRows(at: [ip], with: .automatic)
         } else {
             // otherwise generate indexPath and insert that row

@@ -22,10 +22,10 @@ class InfoVC: UIViewController {
         titleLabel.text = note.title
         descLabel.text = note.desc
         
-        // format date
+        // Format date
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
-        // set date
+        // Set date
         dateLabel.text = dateFormatter.string(from: note.date!)
         
     }
